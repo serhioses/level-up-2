@@ -1,0 +1,53 @@
+BEM
+B - Block
+E - Element
+M - Modifier
+
+
+General structure
+block
+block-name
+block-name-name2
+
+block__element
+block__element-name
+block-name__element-name
+block-name-name2__element-name
+block-name-name2__element-name-name2
+
+block--modifier
+block__element--modifier
+block--key_value
+block__element--key_value
+
+BLOCK
+building
+building-preview
+comment
+post
+footer-menu
+
+ELEMENT (Block name + Element name)
+building__image
+building__title
+building__params
+building__desc
+
+building-preview
+building-preview__image
+building-preview__title
+building-preview__params
+building-preview__desc
+building-preview__publish-date
+building-preview__likes
+building-preview__views-count
+
+MODIFIER (Block name + Modifier name, Block name + Element name + Modifier name)
+nav
+nav--hidden
+nav__item
+nav__item--active
+
+button
+button--size_big
+button--theme_dark
