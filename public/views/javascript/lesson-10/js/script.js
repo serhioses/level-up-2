@@ -1,125 +1,208 @@
 'use strict';
 
-// arguments
-// function printNames () {
-//   for (let i = 0; i < arguments.length; i += 1) {
-//     console.log(arguments[i]);
+// global object (window)
+
+// var color = 'indigo';
+// console.log(window.color);
+
+// window.color = 'indigo';
+// console.log(window.color);
+
+// order of initialization
+// function declaration, var, execution
+
+
+// Closures
+
+// LexicalEnvironment
+// initialization, execution, garbage collector
+// function example (a) {
+//   // LexicalEnvironment = { sum: function, a: 8, b: undefined }
+//   var b = 10;
+//   // LexicalEnvironment = { sum: function, a: 8, b: 10 }
+
+//   sum(a, b);
+//   function sum (a, b) {
+//     // LexicalEnvironment = { a: 8, b: 10 }
+//     console.log(a + b);
 //   }
 // }
-// printNames('Name 1', 'Name 2', 'Name 3');
+// example(8);
 
-// function greetAll (phrase) {
-//   for (let i = 1; i < arguments.length; i += 1) {
-//     console.log(phrase + ' ' + arguments[i]);
-//   }
+// Access to external variables; function [[Scope]]
+// [[Scope]] never changes
+// var color = 'indigo';
+
+// function getColor () {
+//   // debugger;
+//   return color;
+
+//   // [[Scope]] = window
 // }
-// greetAll('Hi', 'Name 1', 'Name 2', 'Name 3');
+// console.log(getColor());
 
-// function test () {
-//   console.log(arguments.callee);
-//   console.log(arguments.callee.caller);
-// }
-// function wrapper () {
-//   test();
-// }
-// wrapper();
-
-// function sum (a, b) {
-//   console.log(a + b);
-//   console.log(arguments);
-// }
-// sum(5, 8, 4, 9, 11);
-
-
-// Date
-// let date = new Date();
-// console.log(typeof date);
-// to primitive
-
-
-// let date = new Date(1000 * 60 * 60 * 24 * 7);
-// console.log(date);
-
-// let date = new Date(2000, 9, 10, 16, 41, 8, 125);
-// console.log(date);
-
-// get date components
-// let date = new Date(2000, 9, 10, 16, 41, 8, 125);
-// console.log(date);
-// console.log(date.getFullYear());
-// console.log(date.getMonth());
-// console.log(date.getDate());
-// console.log(date.getHours());
-// console.log(date.getMinutes());
-// console.log(date.getSeconds());
-// console.log(date.getMilliseconds());
-// console.log(date.getDay());
-
-// console.log(date.getUTCHours());
-
-// console.log(date.getTime());
-
-// console.log(date.getTimezoneOffset());
-
-// set date components
-// let date = new Date();
-// date.setFullYear(year: number, month?: number, date?: number);
-// date.setMonth(month: number, date?: number);
-// date.setDate(date: number);
-// date.setHours(hours: number, min?: number, sec?: number, ms?: number);
-// date.setMinutes(min: number, sec?: number, ms?: number);
-// date.setSeconds(sec: number, ms?: number);
-// date.setMilliseconds(ms: number);
-// date.setTime(time: number);
-// console.log(date);
-// date.setHours(12);
-// console.log(date);
-// date.setUTCHours(12);
-// console.log(date);
-
-// date autocorrection
-// let date = new Date(2008, 2, 38);
-// console.log(date);
-// let date = new Date();
-// date.setDate(date.getDate() + 4);
-// console.log(date);
-// date.setDate(0);
-// console.log(date);
-// date.setDate(-4);
-// console.log(date);
-
-// number and string conversion
-// let date = new Date();
-// console.log(date + 40);
-// console.log(+date + 40);
-
-// performace
-// console.log(performance.now());
-
-// date now
-// console.log(Date.now());
-
-// date formatting
-// let date = new Date(2000, 9, 10, 8, 41, 8, 125);
-// console.log(date.toLocaleString('ru'));
-// console.log(date.toLocaleString('en'));
-// let settings = {
-//   year: 'numeric',
-//   month: 'long',
-//   day: '2-digit',
-//   weekday: 'long',
-//   timezone: 'UTC',
-//   hour: '2-digit',
-//   hour12: false,
-//   minute: 'numeric',
-//   second: 'numeric'
+// Always cuttenr value
+// var user = {
+//   name: 'Serg',
+//   score: 14
 // };
-// // console.log(date.toLocaleString('en', settings));
-// console.log(date.toLocaleString('en', settings));
-// console.log(date.toDateString());
-// console.log(date.toTimeString());
 
-// date parse (YYYY-MM-DD T HH:mm:ss.sss Z )
-// let date = Date.parse('2018-06-07:23:19.000+04:00');
-// console.log(new Date(date));
-// console.log(new Date(date).getUTCHours());
+// function printScore () {
+//   console.log(user.score);
+// }
+
+// printScore();
+// printScore();
+
+// user.score = 18;
+// printScore();
+
+// Nested functions
+// function printEvenNums (nums) {
+//   for (let i = 0; i < nums.length; i += 1) {
+//     if (isEven(i)) {
+//       console.log(nums[i]);
+//     }
+//   }
+
+//   function isEven(i) {
+//     return nums[i] % 2 === 0;
+
+//     // [[Scope]]
+//   }
+// }
+// printEvenNums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+// function return
+// function makeCounter () {
+//   // LexicalEnvironment = { currentCount: undefined }
+//   var currentCount = 0;
+//   // LexicalEnvironment = { currentCount: 0 }
+
+//   return function () {
+//     // LexicalEnvironment = {  }
+//     currentCount += 1;
+
+//     return currentCount;
+
+//     // [[Scope]] is new every time makeCounter() is called { currentCount: 0 }
+//   };
+// }
+// var counter1 = makeCounter();
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+
+// var counter2 = makeCounter();
+// console.log(counter2());
+// console.log(counter2());
+
+// function property (static)
+// function makeCounter () {
+//   function counter () {
+//     counter.currentCount += 1;
+
+//     return counter.currentCount;
+//   }
+//   counter.currentCount = 0;
+
+//   return counter;
+// }
+// var counter1 = makeCounter();
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+
+// var counter2 = makeCounter();
+// console.log(counter2());
+// console.log(counter2());
+
+// function factorial (n) {
+//   if (n > 1) {
+//     if (!factorial[n]) {
+//       // console.log(0);
+//       factorial[n] = n * factorial(n - 1);
+//     }
+
+//     // return factorial[n];
+//     // return n * factorial(n - 1);
+//   }
+
+//   factorial[1] = 1;
+
+//   return factorial[n];
+//   // return 1;
+// }
+// console.log(factorial(5));
+// console.log(factorial(5));
+// console.log(factorial(3));
+// console.dir(factorial);
+
+// Summary
+// Closure is a function with all external variables
+// LexicalEnvironment - local system object with current variables (every time is new when a function is called)
+// [[Scope]] - constant link to an external LexicalEnvironment (defines only at the moment of function declaration)
+// First, look at current LexicalEnvironment, if no value found look at the external LexicalEnvironment. Repeat the algorith until global object reached
+
+// Exception for [[Scope]]
+// var color = 'indigo';
+
+// function example () {
+//   var color = 'biege';
+
+//   var f = new Function('', 'console.log(color);');
+
+//   return f;
+// }
+// example()();
+
+
+// Object counter
+// function makeCounter (initialValue) {
+//   var currentCount = initialValue || 0;
+
+//   return {
+//     inc: function (val) {
+//       currentCount += val || 1;
+
+//       return currentCount;
+//     },
+//     dec: function (val) {
+//       currentCount -= val || 1;
+
+//       return currentCount;
+//     },
+//     get: function () {
+//       return currentCount;
+//     },
+//     set: function (val) {
+//       currentCount = val;
+//     },
+//     reset: function () {
+//       currentCount = initialValue || 0;
+//     }
+//   };
+// }
+
+// var counter1 = makeCounter(10);
+// console.log(counter1.get());
+// console.log(counter1.inc());
+// console.log(counter1.inc());
+// console.log(counter1.dec());
+// console.log(counter1.dec(4));
+// counter1.set(40);
+// console.log(counter1.get());
+// counter1.reset();
+// console.log(counter1.get());
+
+// var counter2 = makeCounter();
+// console.log(counter2.inc());
+// console.log(counter2.inc());
+// console.log(counter2.inc());
+// console.log(counter2.inc());
+
+// console.log(counter1.get(), counter2.get());
