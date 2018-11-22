@@ -195,3 +195,73 @@
 // };
 // console.log(module);
 // console.log(module.method1());
+
+// super hard task
+// transform to object and group by the same year, month and date "year-month-date"
+// const getData = (initialId = 0) => {
+//   const result = [];
+
+//   for (let i = initialId, j = 1; i < initialId + 20; i += 1, j += 1) {
+//     const id = i;
+//     const amount = Math.abs(j * 3 * 1.5);
+
+//     const rate = Math.random();
+
+//     const d = Math.floor(12 + Math.random() * (14 + 1 - 12));
+//     const m = Math.floor(4 + Math.random() * (5 + 1 - 4));
+//     const y = 2018;
+
+//     const time = new Date(y, m, d).getTime();
+
+//     result.push({
+//       id,
+//       amount,
+//       rate,
+//       time,
+//     });
+//   }
+
+//   return result;
+// };
+// function funcName (arg1, arg2) {
+  
+// }
+
+// var resultExample = {
+//   '2018-4-14': [
+//     {
+//       id: 0,
+//       amount: 4,
+//       rate: 2,
+//       time: 1526245200000
+//     },
+//     {
+//       id: 1,
+//       amount: 8,
+//       rate: 6,
+//       time: 1526245200000
+//     }
+//   ],
+//   '2018-6-12': [
+//     {
+//       id: 3,
+//       amount: 5,
+//       rate: 1,
+//       time: 1531342800000
+//     }
+//   ],
+//   '2018-7-13': [
+//     {
+//       id: 4,
+//       amount: 11,
+//       rate: 9,
+//       time: 1534107600000
+//     },
+//     {
+//       id: 5,
+//       amount: 6,
+//       rate: 7,
+//       time: 1534107600000
+//     }
+//   ]
+// };
