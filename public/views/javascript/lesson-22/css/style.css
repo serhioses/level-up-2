@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.shell {
+  display: block;
+  border: 4px solid;
+  padding: 8px;
+}
+.shell--1 {
+  border-color: #B71C1C;
+  background-color: #E57373;
+}
+.shell--2 {
+  border-color: #6A1B9A;
+  background-color: #CE93D8;
+}
+.shell--3 {
+  border-color: #0D47A1;
+  background-color: #2196F3;
+}
+.shell--4 {
+  border-color: #004D40;
+  background-color: #26A69A;
+}
+
+button.active {
+  background: none;
+}
+
+.accordion-item__desc {
+  display: none;
+}
+.accordion-item.active .accordion-item__desc {
+  display: block;
+}
+
+.speed-detector {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  height: 160px;
+  background-color: salmon;
+}
+
+.tooltip {
+  border-radius: 3px;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
