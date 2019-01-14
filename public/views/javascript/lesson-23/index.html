@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS lesson 23</title>
+    <!-- <style>
+      a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}button,input,optgroup,select,textarea{background:0 0;border:0;padding:0;margin:0;font:inherit;color:inherit;box-shadow:none}button{height:auto;cursor:pointer}button:focus{outline:0}button::-moz-focus-inner{outline:0;border:0;padding:0}
+    </style> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- <div class="speed-detector speed-detector-1" data-tooltip="simple tooltip 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolore ullam, ipsam?</p>
+    </div>
+    <div class="speed-detector speed-detector-2" data-tooltip="simple tooltip 2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eaque doloremque iusto.</p>
+    </div>
+    <div class="speed-detector speed-detector-3" data-tooltip="simple tooltip 3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta unde illum blanditiis.</p>
+    </div>
+    <div class="speed-detector speed-detector-4" data-tooltip="simple tooltip 4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate suscipit, fugit repellendus.</p>
+    </div> -->
+
+    <!-- <a href="https://github.com/" target="_blank">Github</a>
+    <form>
+      <p>
+        <input type="text" name="name" placeholder="Name" />
+      </p>
+      <p>
+        <input type="email" name="email" placeholder="E-mail" />
+      </p>
+      <button type="submit">Send</button>
+    </form> -->
+
+    <!-- <div class="shell shell--1">
+      shell 1
+      <p class="shell shell--2">
+        shell 2
+        <span class="shell shell--3">
+          shell 3
+          <strong class="shell shell--4">shell 4</strong>
+        </span>
+      </p>
+    </div> -->
+
+    <!-- <button id="button" type="button">Button</button> -->
+
+    <!-- <ul class="nested">
+      <li class="nested__item">
+        <div class="square">
+          <div class="square__inner"></div>
+        </div>
+      </li>
+      <li class="nested__item">
+        <div class="square">
+          <div class="square__inner"></div>
+        </div>
+      </li>
+      <li class="nested__item">
+        <div class="square">
+          <div class="square__inner"></div>
+        </div>
+      </li>
+      <li class="nested__item">
+        <div class="square">
+          <div class="square__inner"></div>
+        </div>
+      </li>
+      <li class="nested__item">
+        <div class="square">
+          <div class="square__inner"></div>
+        </div>
+      </li>
+    </ul> -->
+
+    <!-- <div class="line">
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+      <div class="line__item"></div>
+    </div> -->
+
+    <!-- <div class="grid">
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+      <div class="grid__item">
+        <p>grid item text 1</p>
+        <p>grid item text 2</p>
+      </div>
+    </div> -->
+
+    <!-- <div class="scroll">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vero dolorem quia accusantium, vel vitae consectetur deleniti debitis doloribus beatae harum excepturi facilis pariatur, consequatur eaque dicta. Dolore a aut, ipsa vel, placeat quis. Veniam laborum deserunt, ex eos dolorum corporis fugit a similique nesciunt saepe voluptate consectetur veritatis hic perferendis? Quam excepturi voluptatem sit facere libero odio, optio quae quisquam vitae rerum explicabo doloremque iste dolore deleniti ducimus est. Culpa facilis similique, sequi eligendi numquam quos earum exercitationem, molestiae quasi omnis voluptate, eos officia quis eius optio consequatur. Nisi repudiandae, nemo inventore at facere, totam tenetur tempora quia repellendus odio nam similique tempore facilis, non odit. Voluptates dolore asperiores dolor nisi ex temporibus sint, ab optio, consectetur in esse praesentium soluta! Delectus iure nihil libero nulla recusandae sequi tenetur aut ad amet, perferendis, quaerat repellat similique explicabo quae aliquam quam, dicta quas! Id accusantium est cupiditate incidunt non repellendus laudantium, ad tempore recusandae, ex aliquid quasi ipsa qui officiis nobis eaque reprehenderit soluta optio deserunt. Dignissimos corrupti velit nulla, reiciendis ipsum! Hic deleniti deserunt commodi excepturi eligendi quam eos itaque porro natus ipsa similique, ad iste quo, et atque sapiente esse facilis quisquam magni iure! Nobis impedit at, alias in debitis minima dicta qui eius, commodi, architecto iste sed odit error sint ipsa. Nobis dolorum dignissimos perferendis! Aliquam, dignissimos sunt animi perferendis recusandae vel exercitationem veniam excepturi sapiente rerum consequatur dolores eum, vitae rem facilis a reiciendis consectetur! Quam accusamus laborum eos labore laudantium, quod ipsa sint praesentium provident minima impedit inventore neque porro eaque voluptatum assumenda magni ullam! Similique modi laboriosam dolores eum repellendus a, amet blanditiis accusantium cumque doloribus, possimus veniam corporis esse eligendi sequi deleniti sapiente aliquid ratione minima. Aperiam necessitatibus ea debitis maiores eaque porro? Dolor quisquam incidunt similique ipsa consequuntur nisi, nam perspiciatis placeat pariatur sint amet. Voluptatibus voluptatum nesciunt vel nihil doloremque, culpa! Numquam doloremque obcaecati architecto officiis nesciunt quae molestias nobis temporibus enim neque fugiat ex magni magnam, inventore nulla minus dolor tenetur sequi voluptas at iste vero. Officiis, ratione voluptatem mollitia id in consequuntur, ad distinctio eos eum necessitatibus eius asperiores sequi commodi. Laudantium harum doloremque nulla! Tempora repudiandae, autem, asperiores eos sapiente soluta ut odio, veniam facilis sequi neque! Accusamus in dolorem dignissimos, laboriosam molestias, voluptatibus repellat alias dicta, suscipit cum, consectetur nostrum ex iste a ea id. Adipisci quaerat dolorem repellat minima, incidunt laboriosam, eum deleniti asperiores recusandae accusamus?
+    </div> -->
+
+    <!-- <p>Тексты и картинки взяты с сайта http://etoday.ru. </p>
+    <h3>Все изображения с realsrc загружаются, когда становятся видимыми.</h3>
+    <div class="news-item">
+      <div class="title">Космопорт Америка \ Architecture</div>
+      Будущее уже сейчас! Скоро фраза из фантастического фильма "флипнуть до космопорта" станет реальностью. По крайней мере вторую ее часть человечество обеспечило. В октябре состоялась официальная церемония открытия космопорта «Америка», первой в мире коммерческой
+      площадки для частных космических полетов. Космопорт открылся в пустыне штата Нью-Мексико. Проект был реализован английским бюро Foster and Partners. Космопорт включает в себя зал ожидания и подготовки к полетам, диспетчерский пункт и ангар. Также
+      обеспечена взлетно-посадочная полоса длиной в три километра.
+      <div class="illustrations">
+        <img src="https://js.cx/lazyimg/1.gif" width="200" height="140" realsrc="https://js.cx/lazyimg/1.jpg">
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="title">Рокер и супермодель в Vogue Russia \ Celebrities</div>
+      Супермодель Анна Вялицына (Anne Vyalitsyna) и музыкант Адам Ливайн (Adam Levine) снялись в ноябрьском номере Vogue Russia. Снимал их Аликс Малка (Alix Malka). Анна и Адам примерили на себя рок-н-ролльные наряды от Alexander Wang, Louis Vuitton, Alexander
+      McQueen, Balmain, Yves Saint Laurent, подобранные для них Катериной Мухиной.
+      <div class="illustrations">
+        <img src="https://js.cx/lazyimg/1.gif" width="200" height="259" realsrc="https://js.cx/lazyimg/2-1.jpg">
+        <img src="https://js.cx/lazyimg/1.gif" width="200" height="260" realsrc="https://js.cx/lazyimg/2-2.jpg">
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="title">Старость - не радость в Vogue Italia \ Fashion Photo</div>
+      Стивен Мейзел (Steven Meisel) снял фотосессию для октябрьского Vogue Italia. В съемках приняли участие: Карен Элсон (Karen Elson), Джиневер ван Синус (Guinevere van Seenus), Эмма Балфур (Emma Balfour), Эн Уст (An Oost), Коринна Ингенлеф (Corinna Ingenleuf),
+      Танга Моро (Tanga Moreau), Кордула Рейер (Cordula Reyer), Гейл о`Нил (Gail O'Neil), Эвелин Кун (Evelyn Kuhn), Каролин де Мэгрэ (Caroline de Maigret), Дэльфин Бафор (Delfine Bafort), Кирстен Оуэн (Kirsten Owen), Гунилла Линдблад (Gunilla Lindblad).
+      <div class="illustrations">
+        <img src="https://js.cx/lazyimg/1.gif" width="341" height="474" realsrc="https://js.cx/lazyimg/3-1.jpg">
+        <img src="https://js.cx/lazyimg/1.gif" width="338" height="474" realsrc="https://js.cx/lazyimg/3-2.jpg">
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="title">"Вышитый рентген" Matthew Cox \ Art</div>
+      Художник из Филадельфии Мэтью Кокс (Matthew Cox) создал серию работ, в которых объединены медицинский рентген и вышивка. Художник взял рентгенограммы и вышил их предполагаемое содержание частично со скелетными элементами. Получилось зловеще и интригующе.
+      Выставка "Вышитый рентген" будет демонстрироваться в галерее Packer/Schopf в Майами, в рамках Базельской Художественной Недели. Эта серия - только треть творческой продукции Кокса. Он также создает традиционные картины и иллюстрации.
+      <div class="illustrations"><img src="https://js.cx/lazyimg/1.gif" width="680" height="452" realsrc="https://js.cx/lazyimg/4.jpg"></div>
+    </div>
+    <div class="news-item">
+      <div class="title">Подарочный каталог Apple 1983 \ Creative</div>
+      Etoday предлагает полистать страницы подарочного каталога продукции Apple образца 1983 года. Кажется, это было так давно! Эта серия - только треть творческой продукции Кокса. Он также создает традиционные картины и иллюстрации.
+      <div class="illustrations"><img src="https://js.cx/lazyimg/1.gif" width="600" height="393" realsrc="https://js.cx/lazyimg/5.jpg"></div>
+    </div>
+    <div class="news-item">
+      <div class="title">Винтажные открытки к празднику Halloween \ Illustrations</div>
+      Занимательная коллекция старых почтовых открыток праздника Halloween. Открытки взяты из ньюйоркской публичной библиотеки и датируются примерно 1910 г.
+      <div class="illustrations"><img src="https://js.cx/lazyimg/1.gif" width="680" height="433" realsrc="https://js.cx/lazyimg/6.jpg"></div>
+    </div>
+    <div class="news-item">
+      <div class="title">Фотограф Emily Lee \ Photography</div>
+      Молодой фотограф Эмили Ли (Emily Lee) использует фотографию, чтобы выразить свои чувства. "Когда я смотрю на жизнь через камеру, вижу все более ясно, - пишет она на своем профиле Flickr. - Фотосъемка - это искусство наблюдения." Эмили Ли - обладательница
+      большого таланта и умения глубоко понимать искусство, хотя учится еще только в средней школе.
+      <div class="illustrations"><img src="https://js.cx/lazyimg/1.gif" width="680" height="453" realsrc="https://js.cx/lazyimg/7.jpg"></div>
+    </div>
+    <div class="news-item">
+      <div class="title">Иконы моды в Fashimals \ Creative</div>
+      Fashimals - tumblr-блог, посвященный иконам моды, превращенным в животных. Здесь есть Анна Винтур, Карл Лагерфельд, Терри Ричардсон, а также много других их коллег.
+      <div class="illustrations"><img src="https://js.cx/lazyimg/1.gif" width="600" height="622" realsrc="https://js.cx/lazyimg/8.jpg"></div>
+    </div> -->
+
+    <!-- <textarea id="keyboard-area" cols="30" rows="10"></textarea> -->
+
+    <!-- <img id="img" src="https://lonelyplanetwpnews.imgix.net/2018/02/1st-Max-Rive-8396.jpg" alt="" />
+    <a href="https://github.com">Leave the page</a> -->
+
+    <!-- <form novalidate="true" autocomplete="off">
+      <div class="form-group">
+        <label class="form-group__label" for="name">Name:</label>
+        <input id="name" class="form-field" name="name" type="text" />
+        <span class="form-error"></span>
+        <button type="button">Copy</button>
+      </div>
+      <div class="form-group" tabindex="0">
+        <select class="select">
+          <option>option 1</option>
+          <option>option 2</option>
+          <option>option 3</option>
+          <option>option 4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" />
+        <input type="radio" />
+      </div>
+      <div class="form-group">
+        <button class="button" type="submit">Send form</button>
+      </div>
+    </form> -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
